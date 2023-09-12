@@ -1,1 +1,16 @@
-git hub
+git config --global user.name "Aiswaryaraghusp"
+
+git config --global user.email "aiswaryaraghu2000@gmail.com"
+
+git config --global user.name
+
+git add .
+
+git init
+
+git remote add origin "https://github.com/Aiswaryaraghusp/Demo.git"
+
+git commit -m "textfile"
+
+
+git push -u origin master
