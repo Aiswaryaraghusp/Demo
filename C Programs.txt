@@ -1,0 +1,544 @@
+
+//Addition
+
+#include <stdio.h>
+
+int main() {
+    int num1,num2,sum;
+    printf("Enter a number");
+    scanf("%d",&num1);
+    printf("Enter a number");
+    scanf("%d", &num2);
+    sum = num1+num2;
+    printf("The sum is %d",sum);
+    return 0;
+}
+
+
+
+//Check the given number is even or not
+
+
+
+#include <stdio.h>
+
+int main() {
+   int a;
+   printf("Enter a number" );
+   scanf("%d",&a);
+   if(a%2==0)
+   {
+       printf("The given number is even");
+       
+   }
+   else
+   {
+       printf("The given number is odd");
+   }
+   
+}
+
+
+//Check largest among two numbers
+
+
+#include <stdio.h>
+
+int main() {
+   int a,b;
+   printf("Enter a number");
+   scanf("%d",&a);
+   printf("Enter a number");
+   scanf("%d",&b);
+   if(a>b)
+   {
+       printf("%d is large",a);
+}
+else
+{
+    printf("%d is large",b);
+}
+}
+
+int main() {
+  int number;
+  printf("Enter a number");
+  scanf("%d",&number);
+  printf("Cube of the number %d is %d\n",number,number*number*number);
+
+  
+  int cube,n;
+  printf("Enter a number");
+  scanf("%d",&n);
+  cube=n*n*n;
+  printf("the cube is %d",cube);
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+  int a,b,temp;
+  printf("Enter a number");
+  scanf("%d",&a);
+    printf("Enter a number");
+
+  scanf("%d",&b);
+  
+  temp = a;
+  a = b;
+  b = temp;
+  
+  printf("a is %d",a);
+  printf("\nb is %d",b);
+ 
+}
+
+#include <stdio.h>
+
+int main() {
+  int a,b,avg;
+  printf(" Enter two  numbers");
+  scanf("%d%d",&a,&b);
+  
+  avg = (a+b)/2;
+  
+  printf("Average of number %d and %d is %d",a,b,avg);
+ 
+ 
+}
+
+int main() {
+  int p,n,r,si;
+  printf("Enter amount");
+  scanf("%d",&p);
+  printf("Enter number of years");
+  scanf("%d",&n);
+  printf("Enter rate");
+  scanf("%d",&r);
+  
+  si = (p*n*r)/100;
+  
+  printf("Simple interest is %d",si);
+  
+  return 0;
+}
+
+  int a,b,c,d;
+  printf("Enter three number");
+  scanf("%d%d%d",&a,&b,&c);
+  if(a>b)
+  {
+      d=a;
+  }
+  else
+  {
+      d=b;
+      
+  }
+  if(d>c)
+  {
+      printf("%d is large",d);
+      
+  }
+  else
+  {
+      printf("%d is large",c);
+  }
+  
+  return 0;
+  
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    int total_mark,avg,g_total=500,n_sub=5;
+    printf("enter your full mark");
+    scanf("%d",&total_mark);
+    avg = (total_mark*100)/g_total;
+   printf("%d",avg);
+    if(avg>35)
+    {
+        
+    if( avg<=40 )
+    {
+        printf("The grade is P");
+        
+    }
+    else if(avg<=50)
+    {
+            printf("The grade is D");
+
+    }
+     else if(avg<=60)
+    {
+            printf("The grade is C");
+
+    }
+     else if(avg<=70)
+    {
+            printf("The grade is B");
+
+    }
+    
+    else if(avg<=80)
+    {
+            printf("The grade is A");
+
+    }
+    else if(avg<=90)
+    {
+            printf("The grade is A+");
+
+    }
+     else if(avg<=100)
+    {
+            printf("The grade is S");
+
+    }
+    }
+    else
+    {
+        printf("The grade is F");
+    }
+    
+    
+    return 0;
+}
+
+
+
+#include <stdio.h>
+#include <string.h>
+int main() {
+    int salary,total_salary,x;
+    char e_name[20];
+    
+    char sex[20];
+    printf("Enter employee name");
+    scanf("%s",e_name);
+    printf("Enter gender");
+    scanf("%s",sex);
+    printf("Enter salary");
+    scanf("%d",&salary);
+    
+    printf("%s",sex);
+   x = strcmp(sex,"Female");
+   
+     if(x==0)
+    if(salary>10000)
+        {
+            total_salary=((salary*10)/100)+salary;       
+    }
+    
+
+
+printf("The total salary after increment is %d",total_salary);
+
+return 0;
+}
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+   int num,rem,rev,n;
+   num=n;
+      printf("Enter your number");
+   scanf("%d",&n);
+   while(num>0)
+   {
+       rem=num%10;
+       rev = (rev*10)+rem;
+       num=num/10;
+   }
+   printf("%d",rev);
+   if(n==rev)
+   {
+       printf("The number is palindrom ");
+   }
+   else
+   {
+       printf("The number is not palindrom");
+   }
+}
+
+
+#include <stdio.h>
+
+int main() {
+    int total_mark,avg,g_total=500,n_sub=5;
+    printf("enter your full mark");
+    scanf("%d",&total_mark);
+    avg = (total_mark*100)/g_total;
+   printf("%d",avg);
+    switch(avg)
+    {
+        
+     Case avg<=40 :
+    
+        printf("The grade is P");
+        
+    
+    case avg<=50:
+    
+            printf("The grade is D");
+
+    
+     case avg<=60:
+    
+            printf("The grade is C");
+
+    
+     case avg<=70:
+    
+            printf("The grade is B");
+
+    
+    
+    case avg<=80:
+    
+            printf("The grade is A");
+
+    
+    case avg<=90:
+    
+            printf("The grade is A+");
+
+    
+     case avg<=100:
+    
+            printf("The grade is S");
+
+    
+    default:
+        printf("The grade is F");
+    
+    
+ 
+}
+
+
+
+Prime numbers
+
+
+main() {
+  int n, i, c = 0;
+  printf("Enter any number n:");
+  scanf("%d", &n);
+
+  //logic
+  for (i = 1; i <= n; i++) {
+      if (n % i == 0) {
+         c++;
+      }
+  }
+
+  if (c == 2) {
+        printf("n is a Prime number");
+  }
+  else {
+         printf("n is not a Prime number");
+  }
+  return 0;    
+}
+
+Fibonacci
+
+#include <stdio.h>
+
+int main() {
+  int a=0,b=1,c,n,i;
+  printf("Enter the limit");
+  scanf("%d",&n);
+  for(i=0;i<n;i++)
+  {
+  printf("%d",a);
+  
+ 
+  c=a+b;
+  a=b;
+  b=c;
+  
+}
+
+    return 0;
+}
+
+
+Sum of two numbers by entering numbers
+
+#include <stdio.h>
+
+int main() {
+ int a,b,sum;
+ printf("Enter a number");
+ scanf("%d",&a);
+ printf("Enter a number");
+ scanf("%d",&b);
+ sum=a+b;
+ printf("The sum of numbers %d and %d is %d",a,b,sum);
+ 
+    return 0;
+}
+
+
+Sum of digits
+
+#include <stdio.h>
+
+int main() {
+   int n,num,sum,rem=0;
+   printf("Enter a number");
+   scanf("%d",&num);
+   while(num>0)
+   {
+       n=num%10;
+       rem=rem+n;
+       num=num/10;
+       
+   }
+   
+   printf("The sum of digits is %d",rem);
+   return 0;
+}
+
+Factorial of a number
+
+#include <stdio.h>
+
+int main() {
+   int fact=1,i;
+   printf("Enter a number");
+   scanf("%d",&i);
+   while(i>0)
+   {
+       fact=fact*i;
+       i=i-1;
+       
+   }
+   
+   printf("The factorial of number is %d",fact);
+   return 0;
+}
+
+
+Pattern
+#include <stdio.h>
+
+int main() {
+   int i,j,n;
+   printf("Enter a number");
+   scanf("%d",&n);
+   for(i=0;i<=n;i++)
+   {
+       for(j=0;j<i;j++)
+       {
+           printf("* ");
+       }
+       printf("\n");
+       
+       
+   }
+return 0;
+}
+
+Amstrong numbers
+
+
+#include <stdio.h>
+
+int main() {
+    int number,n,result=0,num;
+    
+    printf("Enter a number");
+    scanf("%d",&num);
+    number=num;
+    while(num>0)
+klvcc    {
+        n=num%10;
+        result=result+(n*n*n);
+        num=num/10;
+        
+    }
+    if(number==result)
+    {
+        printf("The number is amstrong");
+        
+    }
+    else
+    {
+        printf("The number is not amstrong");
+    }
+        
+    return 0;
+}
+
+
+
+Palindrom
+
+
+#include <stdio.h>
+
+int main() {
+    int number,n,result=0,num;
+    
+    printf("Enter a number");
+    scanf("%d",&num);
+    number=num;
+    while(num>0)
+    {
+        n=num%10;
+        result=(result*10)+n;
+        num=num/10;
+        
+    }
+    if(number==result)
+    {
+        printf("The number is palindrom");
+        
+    }
+    else
+    {
+        printf("The number is not palindrom");
+    }
+        
+    return 0;
+}
+
+
+	int sum();  
+	void main()  
+	{  
+	    int result;   
+	    printf("\nGoing to calculate the sum of two numbers:");  
+	    result = sum();  
+	    printf("%d",result);  
+	}  
+	int sum()  
+	{  
+	    int a,b;   
+	    printf("\nEnter two numbers");  
+	    scanf("%d %d",&a,&b);  
+	    return a+b;   
+	}  
+
+Functions
+
+#include <stdio.h>
+
+int main() {
+   void hello()
+   {
+       printf("hello");
+   }
+   
+   hello();
+}
+
+
