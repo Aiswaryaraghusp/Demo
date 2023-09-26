@@ -1,0 +1,137 @@
+#include <stdio.h>
+
+int findelements(int a[],int n,int key)
+{
+    int i;
+    for(i=0;i<n;i++)
+    {
+    if(key==a[i])
+    {
+    return i;
+    }
+    }
+    return -1;
+    
+}
+
+int main()
+{
+  int a[]={56,57,58,59,60,61,62},position;
+ int n=sizeof(a)/sizeof(a[0]);
+ int key=61;
+ 
+ position=findelements(a,n,key);
+ 
+ if(position==-1)
+ {
+     printf("The position is not found");
+ }
+ else
+ {
+     printf("The element found at the position %d",position+1);
+ }
+ 
+}
+
+#include <stdio.h>
+
+int findelements(int a[],int n,int key)
+{
+    int i;
+    for(i=0;i<n;i++)
+    {
+    if(key==a[i])
+    {
+    return i;
+    }
+    }
+    return -1;
+    
+}
+
+int main()
+{
+  int a[]={98,87,55,25,3,46},position;
+ int n=sizeof(a)/sizeof(a[0]);
+ int key=3;
+ 
+ position=findelements(a,n,key);
+ 
+ if(position==-1)
+ {
+     printf("The position is not found");
+ }
+ else
+ {
+     printf("The element found at the position %d",position+1);
+ }
+ 
+}
+Binarysearch
+#include <stdio.h>
+int binarysearch(int arr[],int low ,int high,int key)
+{
+    if(high<low)
+    
+        return -1;
+    int mid=(low+high)/2;
+    if(key==arr[mid])
+    return mid;
+    if(key>arr[mid])
+      return binarysearch(arr,(mid + 1),high,key);
+    return binarysearch(arr,low,(mid - 1),key);
+       
+    
+    
+}
+int main()
+{
+    int arr[]={5,6,7,8,9,10};
+    int key;
+    int n=sizeof(arr)/sizeof(arr[0]);
+    key=8;
+    printf("index:%d\n",binarysearch(arr,0,n - 1,key));
+    
+}
+Binary search assignment
+25,26,27,28,29,30,31
+
+key=30
+
+
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+int binarysearch(int arr[],int low,int high,int key)
+{
+     
+    if(high<low)
+    {
+        return -1;
+        
+    }
+    int mid =(low+high)/2;
+    if(key==arr[mid])
+    {
+        return mid;
+    }
+    if(key>arr[mid])
+    {
+        return binarysearch(arr,(mid+1),high,key);
+    }
+    return binarysearch(arr,(mid-1),low,key);
+}
+int main()
+{
+     int arr[]={25,26,27,28,29,30,31};
+     int key=30;
+     int n=sizeof(arr)/sizeof(arr[0]);
+     printf("index:%d\n",binarysearch(arr,0,n - 1,key));
+     return 0;
+}
